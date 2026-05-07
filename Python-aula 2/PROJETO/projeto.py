@@ -8,7 +8,7 @@ while True:
     if forma_acesso == 1:
         print("Você está entrado com uma vaga comum")
         time.sleep(1)
-        print("Pressione o botão")
+        input("Pressione o botão")
         time.sleep(1)
         print("Verificando se há vagas comuns disponiveis...")
         time.sleep(1)
