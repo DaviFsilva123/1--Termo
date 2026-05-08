@@ -78,7 +78,7 @@
 # Uma chamada profissão com sua profissão ou "estudante" (string)
 
 nome = input("Digite seu nome")
-idade = int()
+idade = int(input("Digite sua idade"))
 profissão = input("Digite sua profissão")
 
 print = ("meu nome é", nome, "Minha idade é", idade, "E minha profissão é", profissão)

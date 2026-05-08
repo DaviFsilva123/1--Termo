@@ -17,30 +17,33 @@ while True:
             horario_entrada = float(input("Você está entrando no horário:"))
             print("Seja bem-vindo, aproveite seu passeio!!")
             time.sleep(1)
-            numero_de_vagas -= 1
-            horario_saida = float(input("Qual horário você está saindo?:"))
-            saida = horario_saida -  horario_entrada
-            time.sleep(1)
-            print("Você está saindo no horário:", horario_saida)
-            time.sleep(1)
-            if saida <= 0.25:
+        numero_de_vagas -= 1
+        forma_saida = ("você deseja sair do shopping? \n 1-sim \n 2-não")
+        if forma_saida == 1:
+             print("Você está saindo")
+        horario_saida = float(input("Qual horário você está saindo?:"))
+        saida = horario_saida -  horario_entrada
+        time.sleep(1)
+        print("Você está saindo no horário:", horario_saida)
+        time.sleep(1)
+        if saida <= 0.25:
                 print("Saida grátis!!")
-            elif saida >= 3:
+        elif saida >= 3:
                 print("O seu estacionamento ficou o total de 15R$")
 
         else:
             print("Entrada bloqueada. Permitido só entrada via tag.")
-    break
 
-if forma_acesso == 2:
+    if forma_acesso == 2:
     
-    id_tag = float(input("Qual é o id da sua tag?"))
-horario_entrada2 = float(input("Você está entrando no horario?"))
-print("Seja bem-vindo ao shopping!")
-time.sleep(3)
-print("Registrando o ID da sua tag e seu horário de entrada...")
-time.sleep(3)
-print(f"Seu id é {id_tag} você está entrando no horário {horario_entrada2}")
+        id_tag = float(input("Qual é o id da sua tag?"))
+        horario_entrada2 = float(input("Você está entrando no horario?"))
+        print("Seja bem-vindo ao shopping!")
+        time.sleep(1)
+        print("Registrando o ID da sua tag e seu horário de entrada...")
+        time.sleep(1)
+        print(f"Seu id é {id_tag} você está entrando no horário {horario_entrada2}")
+
 
 
 
