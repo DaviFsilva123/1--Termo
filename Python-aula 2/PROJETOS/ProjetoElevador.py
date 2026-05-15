@@ -10,9 +10,58 @@
 # - Precisa possuir um sistema que conte andares de 0 a 10.
 # - O elevador deve transportar até 5 pessoas.
 # - O elevador pode ser chamado de qualquer andar do andar 0 até o andar 10.
-# - O elevador precisa se mover do ponto em que foi chamado até o destino de quem chamou.
+# - O elevador precisa se mover do ponto em que foi chamado até o destino quem chamou.
 # Requisitos não fincional (RNF):
 # - Exibir mensagens indicando o andar atual.
 # - Exibir o número de pessoas no elevador.
 # - As ações realizadas (Subindo, descendo, parando).
+import time
+andares = 10
+capacidade = 5
 
+while True:
+    print("Seja bem-vindo ao elevador!")
+
+    time.sleep(1)
+    andar_atual = float(input("Qual o seu andar atual? "))
+
+    time.sleep(2)
+    input("Aperte o botão para abrir a porta do elevador! ")
+
+    print("A capacidade maxima do elevador são 5 pessoas")
+
+    time.sleep(1)
+    print("Elevador chegando... ")
+
+    time.sleep(1)
+    for i in range(5, 0, -1):
+        print(i)
+        time.sleep(1)
+    quantidade_pessoas = float(input("Qual a quantidade de pessoas que vão se locomover?"))
+
+    if quantidade_pessoas <= 5:
+        print("Entre e fique a vontade.")
+    else:
+        print("capacidade maxima atingida!! Chame o elevador novamente.")
+        continue
+
+        time.sleep(1)
+    print(f"você está no andar {andar_atual} e {quantidade_pessoas} irão se locomover.")
+
+    time.sleep(1)
+    andar_desejado1 = float(input("Para qual andar você deseja ir?"))
+
+    if andar_desejado1 > andar_atual:
+        print("Subindo")
+
+        time.sleep(1)
+    elif andar_desejado1 < andar_atual:
+        print("Descendo")
+
+        time.sleep(1)
+    print(f"Te levando até o andar {andar_desejado1}... ")
+    
+    time.sleep(1)
+    print("Você chegou ao seu destino!")
+
+    
