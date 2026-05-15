@@ -16,8 +16,6 @@
 # - Exibir o número de pessoas no elevador.
 # - As ações realizadas (Subindo, descendo, parando).
 import time
-andares = 10
-capacidade = 5
 
 while True:
     print("Seja bem-vindo ao elevador!")
@@ -60,7 +58,7 @@ while True:
 
         time.sleep(1)
     print(f"Te levando até o andar {andar_desejado1}... ")
-    
+
     time.sleep(1)
     print("Você chegou ao seu destino!")
 
