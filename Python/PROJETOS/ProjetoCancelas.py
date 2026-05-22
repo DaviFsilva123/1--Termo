@@ -43,7 +43,7 @@ while True:
             print("Entrada bloqueada. Permitido só entrada via tag.")
 
     if forma_acesso == 2:
-        ticket_horas2 =0
+        ticket_horas2 = 0
         
 
         id_tag = float(input("Qual é o id da sua tag?"))
@@ -63,7 +63,7 @@ while True:
             print(f"O valor a ser pago é R${valor_fixo3horas_tag}")
         else:
             valor_extra = saida - 3
-            valor_ticket_extra = (valor_extra * 3) +15
+            valor_ticket_extra = (valor_extra * 3) + 15
             valor_tag = valor_ticket_extra - (valor_ticket_extra*0.1)
             print(f"O valor extra que deve ser pago é {valor_tag}")
      

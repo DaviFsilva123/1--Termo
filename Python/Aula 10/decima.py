@@ -22,6 +22,7 @@ print(f"olá, {nome()}!")
 # print(f"O maior valor é {max(valores())}")
 # # Reutilizando funções
 # nome()
+# nome()
 # valores()
 
 ## Conceitos Chave

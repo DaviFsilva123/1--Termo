@@ -24,3 +24,41 @@
 # Requiquisitos não funcionais (RNF):
 # Um sistema que receba o ano do último treinamento de Brigada de incêndio. Se o treinamento tiver mais de 2 anos o sistema deve exibir uma mensagem (Treinamento vencido! Encaminhar para a reciclagem. Sepossuir menos de 2 anos exiba a mensagem (Treinamento válido.))
 # Um sistema que exiba na tela um resumo com total de funcionários cadastrados e quantos estão com treinamentos em dia.
+
+
+import time
+
+
+def identificacao_funcionario():
+    print("status de conformidade dos funcionários de uma empresa.")
+    time.sleep(1)
+    nome_funcionarios = input(">>> Qual o nome do funcionário que está se apresentando? ")
+    time.sleep(1)
+    status_treinamento_usuario = input(">>> Qual seria seu status de treinamento? ")
+    time.sleep(1)
+    setor_funcionarios = input(">>> Qual o setor do funcionário que está se apresentando? ")
+    time.sleep(1)
+
+    if setor_funcionarios == "NR10":
+        print("Utilize luvas de alta tensão e botas de eletricidade para evitar acidentes!")
+    elif setor_funcionarios == "NR35":
+        print("Utilize cinturão de segurança e talabarte para evitar acidentes!")
+    else:
+        print("Isto que você está informando não é um setor válido. Encerrando sistema!")
+
+    return nome_funcionarios, status_treinamento_usuario, setor_funcionarios
+    
+while True:
+    identificacao_funcionario()
+    time.sleep(1)
+    ano_treinamento = int(input(">>> Qual o ano do seu último treinamento de Brigada de Incêndio? "))
+    time.sleep(1)
+    if ano_treinamento <= 2022:
+        print("Treinamento Válido.")
+    else:
+        print("Treinamento Vencido! Encaminhar para reciclagem.")
+
+    
+
+
+
